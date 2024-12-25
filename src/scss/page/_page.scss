@@ -1,0 +1,55 @@
+.form {
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  font-size: 1.2rem;
+  background-color: rgb(231, 229, 229);
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin: 20px 0px;
+  &__title {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  &__description {
+    font-weight: 700;
+    color: red;
+  }
+  &__label {
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    background-color: black;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    &:hover {
+      background-color: transparent;
+      color: black;
+      border-color: black;
+    }
+  }
+  &__input {
+    display: none;
+  }
+  &__button {
+    width: 100%;
+    padding: 1rem 1.12rem;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgb(181, 181, 245);
+    }
+  }
+}
+.puzzle {
+  padding: 0px 30px;
+  text-align: center;
+  word-break: break-word;
+  font-size: 2rem;
+}

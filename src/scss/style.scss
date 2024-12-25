@@ -1,0 +1,35 @@
+//-------------------Reset and import styles--------------------
+@use "reset.scss";
+@use "page/page";
+//-------------------Basic Styles--------------------
+*:focus-visible {
+  outline: 3px solid black;
+}
+body {
+  font-family: "Times New Roman";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1280px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
